@@ -9,6 +9,11 @@
       "name": "linkedin",
       "icon": "fab fa-linkedin",
       "link": "https://www.linkedin.com/company/urai-group/"
+    },
+    {
+      "name": "instagram",
+      "icon": "fab fa-instagram",
+      "link": "https://www.instagram.com/urai_group"
     }
   ]
 }
