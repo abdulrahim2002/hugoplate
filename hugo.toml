@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 # The base URL of your site (required). This will be prepended to all relative URLs.
-baseURL = "/"
+baseURL = "https://abdulrahim2002.github.io/hugoplate/"
 # Title of your website (required).
 title = "URAI Blog"
 # Your theme name
@@ -120,11 +120,11 @@ notAlternative = true
 link = "plugins/swiper/swiper-bundle.css" # https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
 lazy = true
 [[params.plugins.css]]
-link = "plugins/glightbox/glightbox.css" 
+link = "plugins/glightbox/glightbox.css"
 # https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
 lazy = true
 [[params.plugins.css]]
-link = "plugins/font-awesome/v6/brands.css" 
+link = "plugins/font-awesome/v6/brands.css"
 # https://github.com/gethugothemes/hugo-modules/tree/master/icons/font-awesome
 lazy = true
 [[params.plugins.css]]
@@ -139,7 +139,7 @@ lazy = true
 link = "js/search.js" # https://github.com/gethugothemes/hugo-modules/tree/master/search
 lazy = false
 [[params.plugins.js]]
-link = "plugins/swiper/swiper-bundle.js" 
+link = "plugins/swiper/swiper-bundle.js"
 # https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
 lazy = false
 [[params.plugins.js]]
@@ -154,7 +154,7 @@ lazy = false
 [[params.plugins.js]]
 link = "js/accordion.js" # https://github.com/gethugothemes/hugo-modules/tree/master/accordion
 lazy = true
-[[params.plugins.js]] 
+[[params.plugins.js]]
 link = "js/tab.js" # https://github.com/gethugothemes/hugo-modules/tree/master/accordion
 lazy = true
 [[params.plugins.js]]
