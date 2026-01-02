@@ -1,6 +1,7 @@
 # Documentation
 
-Explains how to change colors, fonts, configuration, content, and layouts. Provide this to an AI agent as context when asking it to modify the project.
+Explains how to change colors, fonts, configuration, content, and layouts.
+Provide this to an AI agent as context when asking it to modify the project.
 
 ---
 
