@@ -1,0 +1,29 @@
+---
+title: your_name
+email: your_email@email.com
+image: "/images/avatar-sm.png"
+description: A short description (metadata)
+social:
+  - name: github
+    icon: fa-brands fa-github
+    link: https://github.com
+
+  - name: twitter
+    icon: fa-brands fa-twitter
+    link: https://twitter.com
+
+  - name: linkedin
+    icon: fa-brands fa-linkedin
+    link: https://linkedin.com
+---
+
+A short summary about you.
+
+lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore
+magna aliqua.
+
+Copyright information if applicable
+
+
+> Note: The extension of this file must be `.md`
