@@ -5,7 +5,7 @@ description: "A guide on how to contribute articles on this website"
 date: 2026-01-02T13:13:36+01:00
 image: "https://upload.wikimedia.org/wikipedia/commons/3/38/GitHub_Fork_Button.png"
 categories: ["git", "open source"]
-author: "abdul"
+author: "Abdul Rahim"
 tags: ["git", "open source"]
 draft: false
 ---
