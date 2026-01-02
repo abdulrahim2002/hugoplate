@@ -215,25 +215,37 @@ facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates vol
 
 ### Ordered List
 
+```markdown
 1. List item
 2. List item
 3. List item
-4. List item
-5. List item
+```
+
+renders as:
+
+1. List item
+2. List item
+3. List item
 
 <hr>
 
 ### Unordered List
 
+```markdown
 - List item
 - List item
-- List item
+```
+
+renders as:
+
 - List item
 - List item
 
 <hr>
 
 ### Notice
+
+To see how these notes are generated, see the corresponding markdown file in github.
 
 {{< notice "note" >}}
 This is a simple note.
@@ -259,6 +271,8 @@ This is a simple warning.
 
 ### Tab
 
+See corresponding markdown on Github, to learn how to generate tabbed content.
+
 {{< tabs >}}
 {{< tab "Tab 1" >}}
 
@@ -270,7 +284,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 {{< tab "Tab 2" >}}
 
-#### I wanna talk about the assassination attempt
+#### You are the best
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
@@ -303,9 +317,9 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 {{< accordion "How can I adjust Horizontal centering" >}}
 
-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-- Lorem ipsum dolor sit amet consectetur
+1. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+2. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+3. Lorem ipsum dolor sit amet consectetur
 
 {{< /accordion >}}
 
@@ -343,6 +357,10 @@ int main(void)
 }
 ```
 
+### Diagram
+
+Diagrams can be generated using [mermaid](https://mermaid.js.org/intro/). For example:
+
 ```mermaid
 flowchart TD
     A[Start] --> B{Is it?}
@@ -356,11 +374,20 @@ flowchart TD
 
 ### Blockquote
 
-> Did you come here for something in particular or just general Riker-bashing? And blowing into maximum warp speed, you appeared for an instant to be in two places at once.
+> You can write a block quote using the `>` sign followed by a space and your note.
 
 <hr>
 
 ### Tables
+
+```markdown
+| Tables        |      Are      |  Cool |
+| ------------- | :-----------: | ----: |
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      |   centered    |   $12 |
+| zebra stripes |   are neat    |    $1 |
+```
+renders as:
 
 | Tables        |      Are      |  Cool |
 | ------------- | :-----------: | ----: |
@@ -372,11 +399,42 @@ flowchart TD
 
 ### Image
 
-{{< image src="images/image-placeholder.png" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
+There are 3 methods of adding images:
+
+1. use native markdown syntax
+
+```markdown
+![caption](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Portland_suburban_S-curve_regression_analysis.png/640px-Portland_suburban_S-curve_regression_analysis.png)
+```
+
+renders like this:
+
+![caption](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Portland_suburban_S-curve_regression_analysis.png/640px-Portland_suburban_S-curve_regression_analysis.png)
+
+1. Using html `<img>` tag. This gives you more freedom. You can define height, width and other CSS properties. You can also
+    use tailwind classes.
+
+```markdown
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Dually_Chordial_Graph.png/640px-Dually_Chordial_Graph.png" width=600px>caption</img>
+```
+
+renders like this:
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Dually_Chordial_Graph.png/640px-Dually_Chordial_Graph.png" width=600px>caption</img>
+
+3. Use hugoplate specific syntax:
+
+
+\{\{\< `image src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Backprogation_neural_networks.png/640px-Backprogation_neural_networks.png" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false"` \>\}\}
+
+{{< image src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Backprogation_neural_networks.png/640px-Backprogation_neural_networks.png" caption="" alt="alter-text" height="400" width="400" position="left" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
+
 
 <hr>
 
 ### Gallery
+
+Multiple images can be displayed as a gallary. See Github, for more details.
 
 {{< gallery dir="images/gallery" class="" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}}
 
@@ -386,16 +444,22 @@ flowchart TD
 
 <!-- {{< slider dir="images/gallery" class="max-w-[600px] ml-0" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}} -->
 
+You can also add a slider with multiple images, see Github for more details.
+
 {{< slider dir="images/gallery" class="max-w-[150] ml-0" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}}
 
 <hr>
 
 ### Youtube video
 
+Embed youtube videos.
+
 {{< youtube ResipmZmpDU >}}
 
 <hr>
 
 ### Custom video
+
+Display a custom video.
 
 {{< video src="https://www.w3schools.com/html/mov_bbb.mp4" width="100%" height="auto" autoplay="false" loop="false" muted="false" controls="true" class="rounded-lg" >}}
