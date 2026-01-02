@@ -1,16 +1,18 @@
 ---
 title: "How to contribute?"
 meta_title: ""
-description: "this is meta description"
-date: 2022-04-04T05:00:00Z
-image: "/images/image-placeholder.png"
-categories: ["Application", "Data"]
+description: "A guide on how to contribute articles on this website"
+date: 2026-01-02T13:13:36+01:00
+image: "https://upload.wikimedia.org/wikipedia/commons/3/38/GitHub_Fork_Button.png"
+categories: ["git", "open source"]
 author: "abdul"
 tags: ["git", "open source"]
 draft: false
 ---
 
-# Contributions
+## How to contribute?
+
+> Note: This article only covers usage of git and making changes to codebase. But we need a more detailed guide on how users can create their author page, and then author articles in their name.
 
 To contribute to the website you need to fork to repository, make changes to your fork and submit a pull request,
 below are the detailed steps for your reference:
@@ -109,17 +111,9 @@ Resolve merge conflicts (if any).
 To check, ensure that your pull request appears in, [issues](https://github.com/abdulrahim2002/thinkersclub/pulls).
 
 
-### Thanks for reading
+## Thanks for reading
 
 
 Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
-
-## Creative Design
-
-Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
-
-> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
