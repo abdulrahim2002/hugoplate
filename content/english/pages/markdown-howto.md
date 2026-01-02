@@ -6,17 +6,23 @@ meta_title: "A short tutorial on markdown"
 description: "A short tutorial on markdown"
 # save as draft
 draft: false
+math: true
 ---
+
 
 To make a table of contents, you can write the following at top of your article:
 
-$$
 \{\{\< &nbsp; toc &nbsp; \>\}\}
-$$
 
 The table of contents will appear like this:
 
 {{< toc >}}
+
+
+{{< notice "info" >}}
+Note that in blogs, the Table of Contents is included by default
+{{< /notice >}}
+
 
 Here is an example of headings. You can use this heading by the following markdown rules.
 For example: use `#` for heading 1 and use `######` for heading 6.
@@ -52,7 +58,100 @@ content below horizontal line
 
 ---
 
+### Latex
+
+Firstly, to enable latex support in your document. You must
+use `math: true` in your front matter. An example article with
+math support would look like:
+
+```markdown
+---
+author: "your_name"
+date: 2026-01-02T16:03:40.480Z
+# other properties
+math: true
+---
+
+// rest of the article
+```
+
+Now you can use latex in your document. You can use either `$ /* your code */ $`
+or `\\( /* your code */ \\)`for inline latex. And `$$ /* your code */ $$` or
+`\\[ /* your code */ \\]` for block latex.
+
+{{< notice "warning" >}}
+Please note that you need to type `\\` instead of single `\`. This is because, hugo renders
+double `\\` as a single slash `\`. And latex renderer is looking for delimiters like either
+`\[` or `\(`.
+{{< /notice >}}
+
+Below are some examples:
+
+1. A linear program
+
+```latex
+$$
+\begin{align*}
+    \text{max} \quad 2x_1 + 5x_2 & \\\\
+    \text{s.t.} \quad 4x_1 + 9x_2 &\ge 11 \\\\
+                            5x_1 + x_2 &\ge -4 \\\\
+                            x_1, x_2 &\ge 0
+\end{align*}
+$$
+```
+renders as:
+
+$$
+\begin{align*}
+    \text{max} \quad 2x_1 + 5x_2 & \\\\
+    \text{s.t.} \quad 4x_1 + 9x_2 &\ge 11 \\\\
+                            5x_1 + x_2 &\ge -4 \\\\
+                            x_1, x_2 &\ge 0
+\end{align*}
+$$
+
+2. Weight optimization in a neural network using gradient descend:
+
+```latex
+$$
+    w_{t+1} = w_t - \gamma \cdot \nabla_w f(w)
+$$
+
+```
+
+renders as:
+
+$$
+    w_{t+1} = w_t - \gamma \cdot \nabla_w f(w)
+$$
+
+3. Bayes theorm:
+
+```latex
+$$
+    P( A \mid B ) = \frac{ P( B \mid A ) \times P(A) }{ P(B) }
+$$
+```
+
+renders as:
+
+$$
+    P( A \mid B ) = \frac{ P( B \mid A ) \times P(A) }{ P(B) }
+$$
+
 ### Emphasis
+
+```markdown
+The emphasis, aka italics, with _asterisks_ or _underscores_.
+
+Strong emphasis, aka bold, with **asterisks** or **underscores**.
+
+The combined emphasis with **asterisks and _underscores_**.
+
+Strike through uses two tildes. ~~Scratch this.~~
+```
+
+renders as:
 
 The emphasis, aka italics, with _asterisks_ or _underscores_.
 
@@ -66,11 +165,29 @@ Strike through uses two tildes. ~~Scratch this.~~
 
 ### Button
 
+\{\{\< `button label="Button" link="/your/link" style="solid"` \>\}\}
+
+renders as:
+
 {{< button label="Button" link="/" style="solid" >}}
 
 <hr>
 
 ### Link
+
+```markdown
+[I'm an inline-style link](https://www.google.com)
+
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
+[I'm a relative reference to a repository file](../blob/master/LICENSE)
+
+URLs and URLs in angle brackets will automatically get turned into links.
+<http://www.example.com> or <http://www.example.com> and sometimes
+example.com (but not on Github, for example).
+```
+
+renders as:
 
 [I'm an inline-style link](https://www.google.com)
 
@@ -88,7 +205,11 @@ Some text to show that the reference links can follow later.
 
 ### Paragraph
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.
+Just write paragraphs as you normally would or use the `<p> tag </p>`.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis
+cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus,
+facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum.
 
 <hr>
 

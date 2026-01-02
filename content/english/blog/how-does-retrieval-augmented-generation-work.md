@@ -7,6 +7,7 @@ image: "https://i.ibb.co/BVRS45xb/Screenshot-from-2026-01-02-14-01-35.png"
 categories: ["RAG", "LLM", "Agentic AI"]
 tags: ["RAG", "LLM", "Agentic AI"]
 draft: false
+math: true
 ---
 
 ### Introduction
@@ -26,8 +27,8 @@ knowledge base as much as possible.
 
 There are two components to a RAG model:
 
-1. **Retriever:** Given a query $$q$$, the retriever finds all documents
-   $$d \in D$$ that may be relevant to the query $$q$$.
+1. **Retriever:** Given a query $q$, the retriever finds all documents
+   $d \in D$ that may be relevant to the query $q$.
 2. **Generator:** This is the text generation system—typically a large
    language model (like GPT)—that actually generates text given a
    prompt.
@@ -59,7 +60,7 @@ steps:
  Before training a retriever, you'll need:
    - A **large document corpus** (e.g., all Wikipedia articles, a
      collection of articles, or PDF files). This acts as our knowledge
-     base $$D$$.
+     base $D$.
    - A **query-document pair dataset** containing queries and their
      corresponding relevant documents. This is crucial for training a
      retrieval model.
@@ -92,7 +93,7 @@ There are different types of retrieval models you can use. Common ones include:
        queries into a shared vector space.
 
 3. **Retrieve Top-$k$ Similar Documents:**  The retriever should be able
-   to fetch the top-$$k$$ most similar documents $$d \in D$$.
+   to fetch the top-$k$ most similar documents $d \in D$.
 
 4. **Useful Libraries:**
    Examples include **FAISS**, **Anserini/Pyserini**, and **DPR** (from Hugging Face).
