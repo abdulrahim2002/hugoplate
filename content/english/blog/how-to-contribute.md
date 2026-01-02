@@ -48,7 +48,7 @@ This will add upstream as a remote in your local repository so your can run `git
 
 Subsequently, you can do the following to keep up to date:
 
-```
+```bash
 git fetch upstream      # fetches latest changes from original repository to your upstream
 git switch main         # switch to main
 git merge upstream/main # merges upstream/main with your origin/main, hence you are uptodate
@@ -62,7 +62,7 @@ And keep the main branch to fetch changes only and to keep latest copy.
 
 Create a new feature branch, with a descriptive name, i.e. the name should describe the update you make.
 
-```
+```bash
 git checkout -b tutorial # creates a new branch tutorial and switches to it
 ```
 
@@ -85,7 +85,7 @@ Make your changes accordingly. If you have any doubts contact me.
 
 - Step 5: Commit and push your changes
 
-```
+```bash
 git add .
 git commit -m "commit message, preferably following conventions"
 git push --set-upstream origin tutorial
@@ -113,7 +113,3 @@ To check, ensure that your pull request appears in, [issues](https://github.com/
 
 ## Thanks for reading
 
-
-Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!

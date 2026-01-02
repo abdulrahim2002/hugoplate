@@ -6,6 +6,7 @@
           {{ $image:= .Params.image }}
           {{ if $image }}
             <div class="mb-10">
+              {{/*  TODO: Figure out how to size the image, on the actual blog page?  */}}
               {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full rounded") }}
             </div>
           {{ end }}
