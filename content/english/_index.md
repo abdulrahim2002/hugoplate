@@ -1,53 +1,55 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Hugo Project"
-  content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
+  title: "University of Regensburg Artificial Intelligence Blog"
+  content: "The official blogging and publishing website of the <b><u>[URAI group](https://urai-group.com)</u></b>"
   image: "/images/banner.png"
+
   button:
     enable: true
-    label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/hugoplate"
+    label: "Start Reading"
+    link: "/hugoplate/blog" # need to configure baseurl properly for this to work
 
 # Features
 features:
-  - title: "What's Included in Hugoplate"
+  - title: "AI for Everyone"
     image: "/images/service-1.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
+    content: "AI shouldn’t be an exclusive club. We break down complex machine learning concepts into approachable, engaging content for all backgrounds."
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
+      - "Relatable analogies and visual explanations"
+      - "Content tailored for both beginners and experts"
+      - "Deep dives into the ethical and social impact of AI"
+      - "Touch upon topics of pressing concern"
+      - "Discussing disruptive trends in AI"
+      - "Practical examples of how technology shapes our future"
     button:
       enable: false
       label: "Get Started Now"
       link: "#"
 
-  - title: "Discover the Key Features Of Hugo"
+  - title: "At the Frontiers of Research"
     image: "/images/service-2.png"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
+    content: "For the technical community, we provide deep dives into the cutting edge of Data Science and Machine Learning to keep you inspired and informed."
     bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+      - "Summaries of the latest academic breakthroughs"
+      - "Insights into advanced ML and Data Science techniques"
+      - "Contributions from local researchers and experts"
+      - "A platform for technical peer-to-peer learning"
     button:
       enable: true
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/hugoplate"
+      label: "Start Contributing"
+      link: "/hugoplate/blog" # make it work
 
-  - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
+  - title: "Anchored in Regensburg, Global in Vision"
     image: "/images/service-3.png"
-    content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
+    content: "URAI is more than a blog; it's a central platform for the Regensburg AI ecosystem, connecting students with industry and academia."
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - "We bring together top AI talent from University of Regensburg, OTH Regenbsurg, and numerous other academia and industry partners"
+      - "Hands-on opportunities to go beyond the lecture hall"
+      - "Collaborative environment for interdisciplinary teams"
+      - "Strengthening Regensburg’s position in the global AI landscape"
     button:
       enable: false
       label: ""
-      link: ""
+      link: "#"
 ---

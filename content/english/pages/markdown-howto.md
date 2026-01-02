@@ -1,16 +1,25 @@
 ---
-title: "Elements"
+title: "Markdown howto"
 # meta title
-meta_title: ""
+meta_title: "A short tutorial on markdown"
 # meta description
-description: "This is meta description"
+description: "A short tutorial on markdown"
 # save as draft
 draft: false
 ---
 
+To make a table of contents, you can write the following at top of your article:
+
+$$
+\{\{\< &nbsp; toc &nbsp; \>\}\}
+$$
+
+The table of contents will appear like this:
+
 {{< toc >}}
 
-Here is an example of headings. You can use this heading by the following markdown rules. For example: use `#` for heading 1 and use `######` for heading 6.
+Here is an example of headings. You can use this heading by the following markdown rules.
+For example: use `#` for heading 1 and use `######` for heading 6.
 
 # Heading 1
 
@@ -24,7 +33,24 @@ Here is an example of headings. You can use this heading by the following markdo
 
 ###### Heading 6
 
-<hr>
+A horizontal line can be drawn with the help of three dashes i.e. `---` or `<hr>` tag.
+
+```
+content above horizontal line
+
+---
+content below horizontal line
+```
+
+Renders like this:
+
+content above horizontal line
+
+---
+
+content below horizontal line
+
+---
 
 ### Emphasis
 

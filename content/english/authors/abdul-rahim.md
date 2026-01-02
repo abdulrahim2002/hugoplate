@@ -8,6 +8,10 @@ social:
     icon: fa-brands fa-github
     link: https://github.com/abdulrahim2002/
 
+  - name: email
+    icon: fa-regular fa-envelope
+    link: mailto:abdulrahimhere@yahoo.com
+
   # - name: twitter
   #   icon: fa-brands fa-twitter
   #   link: https://twitter.com
